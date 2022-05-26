@@ -40,15 +40,22 @@
     </div>
 
     <script>
-        const wrapEl = document.querySelector('.wrap');
-        const boxEl_3 =document.querySelector('.box:nth-child(3)');
-        const pEl = document.createElement('p')
+        // const wrapEl = document.querySelector('.wrap');
+        // const boxEl_1 =document.querySelector('.box:nth-child(1)');
+        // const pEl = document.createElement('p')
 
-        pEl.innerHTML = '네이버'
-       
+        // pEl.innerHTML = '네이버'
+        
     
-        wrapEl.appendChild(pEl)
-        wrapEl.removeChild(boxEl_3)
+        // wrapEl.appendChild(pEl)
+        // wrapEl.removeChild(boxEl_1)
+        const wrapEl = document.querySelector('.wrap');
+        const pEl = document.createElement('p');
+
+        pEl.innerHTML = '<a href="http://naver.com">네이버</a>';
+        wrapEl.appendChild(pEl);
+        wrapEl.removeChild(document.querySelector('.box:first-child'));
+
 
     </script>
 
